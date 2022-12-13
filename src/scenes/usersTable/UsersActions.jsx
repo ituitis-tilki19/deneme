@@ -29,18 +29,6 @@ const UsersActions = ({ params, rowId, setRowId }) => {
         position: "relative",
       }}
     >
-      <Fab
-        color="secondary"
-        sx={{
-          width: 40,
-          height: 40,
-          bgcolor: red[700],
-          "&:hover": { bgcolor: red[800] },
-        }}
-        onClick={handleDelete}
-      >
-        <DeleteIcon />
-      </Fab>
       {success ? (
         <Fab
           color="primary"
@@ -78,6 +66,18 @@ const UsersActions = ({ params, rowId, setRowId }) => {
           }}
         />
       )}
+      <Fab
+        color="secondary"
+        sx={{
+          width: 40,
+          height: 40,
+          bgcolor: red[700],
+          "&:hover": { bgcolor: red[800] },
+        }}
+        onClick={handleDelete}
+      >
+        <DeleteIcon />
+      </Fab>
     </Box>
   );
 };
