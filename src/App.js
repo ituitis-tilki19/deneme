@@ -1,11 +1,8 @@
 import { ColorModeContext, useMode } from "./theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { Routes, Route } from "react-router-dom";
-
 import Dashboard from "./scenes/dashboard";
-
 import Login from "./scenes/login";
-
 import Addresses from "./scenes/addressesTable";
 import Books from "./scenes/booksTable";
 import Carts from "./scenes/cartsTable";
